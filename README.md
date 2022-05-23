@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/metal-finance/metal-contract/branch/master/graph/badge.svg?token=CI26SD9SGE)](https://codecov.io/gh/metal-finance/metal-contract)
 [![CI](https://github.com/metal-finance/metal-contract/workflows/CI/badge.svg)](https://github.com/metal-finance/metal-contract/actions?query=workflow%3ACI)
 
-The smart contracts behind [metal.finance](https://metal.finance) 🤠
+The smart contracts behind [metal.finance](https://metalswap.finance) 🤠
 
 The contracts are compiled with [Hardhat](https://hardhat.org/getting-started/), and tested using [Waffle](https://hardhat.org/guides/waffle-testing.html#testing-with-ethers-js-waffle) and [TypeScript](https://hardhat.org/guides/typescript.html#typescript-support).
 
@@ -68,7 +68,7 @@ MNEMONIC_TEST_ACCOUNT="seed phrase"
 $ npx solidity-docgen --templates=templates
 ```
 
-The output in the `docs` folder should be copied to the appropriate folder in the [metal-docs repo](https://github.com/metal-finance/metal-docs/tree/master/solidity-docs).
+The output in the `docs` folder should be copied to the appropriate folder in the [metal-docs repo](https://docs.metalswap.finance/).
 
 ### Running Slither
 
