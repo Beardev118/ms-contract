@@ -7,9 +7,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deployer } = await getNamedAccounts()
 
   // Manually check if the pool is already deployed
-  const metalWCUSDMetaPool = await getOrNull(
-    "metalWCUSDMetaPoolUpdatedDeposit",
-  )
+  const metalWCUSDMetaPool = await getOrNull("metalWCUSDMetaPoolUpdatedDeposit")
   if (metalWCUSDMetaPool) {
     log(
       `reusing "metalWCUSDMetaPoolUpdatedDeposit" at ${metalWCUSDMetaPool.address}`,

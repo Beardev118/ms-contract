@@ -9,9 +9,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   // Manually check if the pool is already deployed
   const metalWCUSDMetaPool = await getOrNull("metalWCUSDMetaPoolUpdated")
   if (metalWCUSDMetaPool) {
-    log(
-      `reusing "metalWCUSDMetaPoolUpdated" at ${metalWCUSDMetaPool.address}`,
-    )
+    log(`reusing "metalWCUSDMetaPoolUpdated" at ${metalWCUSDMetaPool.address}`)
   } else {
     // Constructor arguments
     const TOKEN_ADDRESSES = [

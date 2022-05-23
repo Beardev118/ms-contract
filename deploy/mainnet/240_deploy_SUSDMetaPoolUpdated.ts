@@ -66,9 +66,8 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     )
   }
 
-  const lpTokenAddress = (
-    await read("metalSUSDMetaPoolUpdated", "swapStorage")
-  ).lpToken
+  const lpTokenAddress = (await read("metalSUSDMetaPoolUpdated", "swapStorage"))
+    .lpToken
   log(`metal sUSD MetaSwap LP Token at ${lpTokenAddress}`)
 
   await save("metalSUSDMetaPoolUpdatedLPToken", {

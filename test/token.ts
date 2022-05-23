@@ -151,9 +151,7 @@ describe("Token", () => {
       }
 
       // Let those addresses transfer the token
-      await metalToken
-        .connect(governance)
-        .addToAllowedList(approvedTransferees)
+      await metalToken.connect(governance).addToAllowedList(approvedTransferees)
     },
   )
 
